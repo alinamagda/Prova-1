@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #cde3d9;
+}
+
+header {
+    background: #3e833f;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+a:hover {
+    color: #4543b8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    margin: 140px 10px 10px 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.hobbies {
+    background: #f9f9f9;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    width: 350px;
+}
+
+.hobbies-title {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+li > img {
+    width: 100px;
+    border-radius: 5%;
+    margin-right: 10px;
+}
+
+.projects {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+/* .progetto1 {
+
+}
+.progetto2 {
+    position: absolute;
+    top: 70px;
+    left: 130px;
+}
+.progetto3 {
+    position: absolute;
+    top: 100px;
+    left: 250px;
+} */
+
+footer {
+    background: #29582a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

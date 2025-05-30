@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Alina's blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>Alina's blog</h1>
+      <p>This is a simple HTML page with a table and a form.</p>
+      <nav aria-label="Main Navigation">
+        <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About me -->
+      <section aria-label="About me">
+        <h2 id="about">About Alina</h2>
+        <p>
+          Alina is a passionate <strong>web developer</strong> who loves
+          creating beautiful and functional websites.
+        </p>
+        <p>
+          In her free time, she enjoys hiking, reading, and exploring new
+          technologies.
+        </p>
+        <p>
+          You can find her on
+          <a href="https://github.com/alina">GitHub</a> and
+          <a href="https://twitter.com/alina">Twitter</a>.
+        </p>
+        <p>
+          Alina's blog is a place where she shares her thoughts on web
+          development, technology, and life in general. Feel free to explore
+          her posts and leave comments!
+      </p>
+      </section>
+
+      <!-- Lista non ordinata -->
+      <section class="hobbies">
+        <h2 class="hobbies-title">Hobbies</h2>
+        <ul class="list">
+          <li>Hiking</li>
+          <li>Reading</li>
+          <li>Exploring new technologies</li>
+        </ul>
+      </section>
+
+      <!-- Lista ordinata -->
+      <section class="projects">
+          <h2 class="projects-title">Projects</h2>
+          <ol class="list projects-list">
+            <li><img src="assets/progetto1.jpg" alt="Progetto 1" class="progetto1"/></li>
+            <li><img src="assets/progetto2.jpg" alt="Progetto 2" class="progetto2"/></li>
+            <li><img src="assets/progetto3.jpg" alt="Progetto 3" class="progetto3"/></li>
+          </ol>
+
+
+      <!-- Tabella -->
+      <!-- <section>
+        <h2>Project Scores</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Progetto Alpha</th>
+              <th>Progetto Beta</th>
+              <th>Progetto Gamma</th>
+              <th>Progetto Delta</th>
+              <th>Progetto Epsilon</th>
+              <th>Progetto Zeta</th>
+              <th>Progetto Eta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mario</td>
+              <td>100</td>
+              <td>90</td>
+              <td>80</td>
+              <td>70</td>
+              <td>60</td>
+              <td>50</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Luigi</td>
+              <td>90</td>
+              <td>80</td>
+              <td>70</td>
+              <td>60</td>
+              <td>50</td>
+              <td>40</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Peach</td>
+              <td>80</td>
+              <td>70</td>
+              <td>60</td>
+              <td>50</td>
+              <td>40</td>
+              <td>30</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Bowser</td>
+              <td>70</td>
+              <td>60</td>
+              <td>50</td>
+              <td>40</td>
+              <td>30</td>
+              <td>20</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Toad</td>
+              <td>60</td>
+              <td>50</td>
+              <td>40</td>
+              <td>30</td>
+              <td>20</td>
+              <td>10</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </section> -->
+
+      <!-- Form -->
+      <section>
+        <h2 id="contact">Contact Form</h2>
+        <form onsubmit="" enctype="multipart/form-data">
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="sito">Website:</label>
+            <input
+              type="url"
+              id="sito"
+              name="sito"
+              placeholder="Enter your website"
+            />
+          </div>
+
+          <div>
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Please leave a comment"
+              disabled
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="file">Upload a file:</label>
+            <input
+              type="file"
+              id="file"
+              name="file"
+              accept=".jpg, .jpeg, .png, .pdf"
+              placeholder="Choose a file"
+            />
+          </div>
+
+          <div>
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">Accept terms and conditions:</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter"
+              >I want to subscribe to the newsletter</label
+            >
+          </div>
+
+          <div>
+            <p>Do you like my blog?</p>
+            <input
+              type="radio"
+              id="option1"
+              name="options"
+              value="option1"
+              checked
+            />
+            <label for="option1">Yes</label>
+            <input type="radio" id="option2" name="options" value="option2" />
+            <label for="option2">No</label>
+          </div>
+
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Theme Selection -->
+    <!--  <div>
+    <p>Choose your theme:</p>
+    <input type="radio" id="light" name="theme" value="light" checked />
+    <label for="light">Light</label>
+    <input type="radio" id="dark" name="theme" value="dark" />
+    <label for="dark">Dark</label>
+     </div> -->
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Alina's blog. All rights reserved.</p>
+      <div>
+      <label for="subscribe">Subscribe to newsletter:</label>
+      <input
+        type="email"
+        id="subscribe"
+        name="subscribe"
+        placeholder="Enter your email"
+      />
+      <button type="submit">Subscribe</button>
+      </div>
+    </footer>
+  </body>
+</html>
