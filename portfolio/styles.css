@@ -52,7 +52,6 @@ li {
 nav li a {
   color: var(--white);
   text-decoration: none;
-  transition: color 0.3s ease;
   font-size: 1.1rem;
 }
 

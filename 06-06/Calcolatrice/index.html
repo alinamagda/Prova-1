@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcolatrice</title>
+</head>
+<body>
+<h1>Calcolatrice</h1>
+<input type="number" id="n1" placeholder="Inserisci un numero">
+<input type="number" id="n2" placeholder="Inserisci un altro numero">
+
+<div id="operation">
+    <button onclick="calcola('somma')">Somma</button>
+    <button onclick="calcola('differenza')">Differenza</button>
+    <button onclick="calcola('prodotto')">Prodotto</button>
+    <button onclick="calcola('divisione')">Divisione</button>
+</div>
+
+<p id="result">Risultato:</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
