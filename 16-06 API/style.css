@@ -1,0 +1,20 @@
+ #userCard {
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+      margin: 2rem auto;
+      text-align: center;
+    }
+   
+    #userCard h2 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    
+    #userCard p {
+      color: #444490;
+      margin: 0.3rem;
+    }
